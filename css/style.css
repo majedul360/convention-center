@@ -84,8 +84,7 @@ header nav .name-of-center {
 }
 
 header nav button .hambarger-menu {
-    font-size: 2.5rem !important;
-    
+    font-size: 2.5rem !important;  
 }
 
 header nav a {
@@ -97,7 +96,6 @@ header nav a:hover {
 }
 
     /* home section  */
-
 .home .carousel  .carousel-slider{
    width: 100%;
    min-height:80vh;
@@ -116,15 +114,6 @@ header nav a:hover {
 .home .carousel  .carousel-slider .content h1 {
     font-size: 5rem;
     text-transform: none;
-}
-
-.home .carousel  .carousel-slider .content .custom-btn {
-    background: var(--pink);
-}
-
-.home .carousel .carousel-slider .content .custom-btn:hover {
-    background: var(--black);
-    border-color: var(--white);
 }
 
 /* package section start  */
@@ -168,9 +157,26 @@ header nav a:hover {
     color: var(--black-light);
 }
 
+/* frequently asked question section start  */
 
+.faq .accordion  #button {
+    font-size:3rem;
+    color: var(--black);
+}
 
+.faq .accordion #button::after {
+    width: 3rem;
+    height: 3rem;
+    background-size: 3rem !important;
+}
 
+.faq .accordion .article {
+    color: var(--black-light);
+}
+
+.faq .image img {
+    height:42rem;
+}
 
 
 
