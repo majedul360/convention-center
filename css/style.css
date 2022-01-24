@@ -13,7 +13,7 @@
     --black-light:#666;
     --white:#fff;
     --white-light:#aaa;
-    --border:.2rem solid var(--black);
+    --border:.2rem solid var(--white);
 }
 
 html {
@@ -38,26 +38,44 @@ body {
 
 .custom-btn {
     display: inline-block;
-    font-size: 1.7rem;
+    font-size:2rem;
     color: var(--white);
     border: var(--border);
     border-color: var(--white);
+    background: var(--pink);
     padding: 1rem 3.5rem;
     text-decoration: none;
+    border-radius: .5rem;
     margin-top: 2rem;
     transition: all .2s linear;
 }
 
 .custom-btn:hover {
+    background: var(--black);
     color: var(--white);
-    background: var(--pink);
-    border-color: var(--pink);
+}
+
+section {
+    margin-bottom: 10rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size:4rem;
+    color: var(--white);
+    margin-bottom:1.5rem;
+}
+
+.section-title-img {
+    background: url(../images/header-img.png) no-repeat center;
+    height:2rem;
+    margin-bottom: 7rem;
 }
 
 /* common styles end  */
-
 header {
     background: var(--pink);
+    z-index: 1000;
 }
 
 header nav .name-of-center {
@@ -80,45 +98,87 @@ header nav a:hover {
 
     /* home section  */
 
-.home .carousel .carousel-inner .carousel-item .carousel-slider{
+.home .carousel  .carousel-slider{
    width: 100%;
    min-height:80vh;
    background-size: cover !important;
 }
 
-.home .carousel button .slider-next-prev-btn {
+.home .carousel  .slider-next-prev-btn {
     height: 5rem;
     width: 5rem;
 }
 
-.home .carousel .carousel-inner .carousel-item .carousel-slider .content {
+.home .carousel .carousel-inner  .content {
     max-width: 50rem;
 }
 
-.home .carousel .carousel-inner .carousel-item .carousel-slider .content h1 {
+.home .carousel  .carousel-slider .content h1 {
     font-size: 5rem;
     text-transform: none;
 }
 
-.home .carousel .carousel-inner .carousel-item .carousel-slider .content .custom-btn {
+.home .carousel  .carousel-slider .content .custom-btn {
     background: var(--pink);
 }
 
-.home .carousel .carousel-inner .carousel-item .carousel-slider .content .custom-btn:hover {
+.home .carousel .carousel-slider .content .custom-btn:hover {
     background: var(--black);
     border-color: var(--white);
 }
 
-
-  /* media queries  */
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
+/* package section start  */
+.package .best-seller{
+    background: var(--white);
+    border-radius:5rem;
+    position: relative;
 }
 
+.package .best-seller .hot-deals {
+    position: absolute;
+    top: -2rem;
+    right: 2.5rem;
+    background: var(--pink);
+    color: var(--white);
+    font-size:2rem;
+    font-weight: bold;
+    padding: .5rem 1.5rem;
+    border-radius: 5rem;
+}
+
+.package .custom-card h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.package .custom-card h3 {
+    font-size:2.5rem;
+}
+
+.package .custom-card .article {
+    color: var(--white-light);
+    margin: 1rem 0;
+}
+
+.package .custom-card .article i{
+    color: var(--pink);
+}
+
+.package .best-seller .article {
+    color: var(--black-light);
+}
+
+
+
+
+
+
+
+
+
+/* media quearies  */
 @media (max-width:450px) {
     html {
-        font-size: 50%;
+        font-size:52%;
     }
 }
